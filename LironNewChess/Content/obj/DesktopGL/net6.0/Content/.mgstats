@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"Z:/LironNewChess/LironNewChess/Content/Sprites/ChessPieces.png","Z:/LironNewChess/LironNewChess/Content/bin/DesktopGL/Content/Sprites/ChessPieces.xnb","TextureProcessor","Texture2DContent",47275,1456085,0.2130214
+"Z:/LironNewChess/LironNewChess/Content/Sprites/Circle.png","Z:/LironNewChess/LironNewChess/Content/bin/DesktopGL/Content/Sprites/Circle.xnb","TextureProcessor","Texture2DContent",3898,160085,0.1149972
+"Z:/LironNewChess/LironNewChess/Content/Sprites/WhiteEmpty.png","Z:/LironNewChess/LironNewChess/Content/bin/DesktopGL/Content/Sprites/WhiteEmpty.xnb","TextureProcessor","Texture2DContent",2793,1440085,0.3355156
