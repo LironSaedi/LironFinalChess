@@ -8,15 +8,13 @@ using System;
 
 namespace Chess
 {
-    // A simple program to play 1v1 chess.
-    // The program tells all avalible possible moves and contains all 
-    // normal and special moves in chess aswell as restricts pieces from doing illegal moves.
+
     public class DriverClass : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public static Random Random = new Random(); //Static since new seed is generated with current time
+        public static Random Random = new Random(); 
 
         ScreenManager screenManager;
 

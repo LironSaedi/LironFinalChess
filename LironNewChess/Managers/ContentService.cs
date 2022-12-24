@@ -30,7 +30,7 @@ namespace Chess.Managers
             SoundBank = new Dictionary<string, SoundEffect>();
         }
 
-        public static ContentService Instance //Not optimal but only want there to ever exist one ContentSerive, hence a singleton class
+        public static ContentService Instance
         {
             get
             {

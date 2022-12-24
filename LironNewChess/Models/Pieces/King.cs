@@ -32,7 +32,7 @@ namespace Chess.Models.Pieces
                     }
                 }
             }
-            //RocadeLeft
+            //Left
             if(NumberOfMoves == 0 && board.IsEmpty(Row, 1) && board.IsEmpty(Row, 2) && board.IsEmpty(Row, 3) 
                 && board.IsLegalMove(this, Row, 4) && board.IsLegalMove(this, Row, 3) && board.IsLegalMove(this, Row, 2) && !board.IsEmpty(Row, 0))
             {
@@ -42,7 +42,8 @@ namespace Chess.Models.Pieces
                     AddCastlingMove(p, 2, 3);
                 }
             }
-            //RocadeRight
+
+            //Right
             if (NumberOfMoves == 0 && board.IsEmpty(Row, 5) && board.IsEmpty(Row, 6)
                 && board.IsLegalMove(this, Row, 4) && board.IsLegalMove(this, Row, 5) && board.IsLegalMove(this, Row, 6) && !board.IsEmpty(Row, 7))
             {

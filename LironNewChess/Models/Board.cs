@@ -60,6 +60,8 @@ namespace Chess.Models
 
             int pieceSize = Constants.PIESESIZE;
             int markSize = Constants.MARKED_PIESESIZE;
+
+            /*
             for (int i = 0; i < 8; i++)
             {
                 Piece temp = new Pawn(new Sprite2D(ContentService.Instance.Textures["WhitePawn"], new Rectangle(0, 0, pieceSize, pieceSize)), 6, i, ChessColor.White,this);
@@ -84,15 +86,17 @@ namespace Chess.Models
             x = new Bishop(new Sprite2D(ContentService.Instance.Textures["WhiteBishop"], new Rectangle(0, 0, pieceSize, pieceSize)), 7, 5, ChessColor.White,this);
             x.Center(grid[7, 5].Bounds);
             board[7, 5] = x;
+            
             x = new Queen(new Sprite2D(ContentService.Instance.Textures["WhiteQueen"], new Rectangle(0, 0, pieceSize, pieceSize)), 7, 3, ChessColor.White,this);
             x.Center(grid[7, 3].Bounds);
             board[7, 3] = x;
-            x = new King(new Sprite2D(ContentService.Instance.Textures["WhiteKing"], new Rectangle(0, 0, pieceSize, pieceSize)), 7, 4, ChessColor.White,this);
+            */
+           Piece x = new King(new Sprite2D(ContentService.Instance.Textures["WhiteKing"], new Rectangle(0, 0, pieceSize, pieceSize)), 7, 4, ChessColor.White,this);
             x.Center(grid[7, 4].Bounds);
             board[7, 4] = x;
 
 
-
+/*
             for (int i = 0; i < 8; i++)
             {
                 Piece temp = new Pawn(new Sprite2D(ContentService.Instance.Textures["BlackPawn"], new Rectangle(0, 0, pieceSize, pieceSize)), 1, i, ChessColor.Black,this);
@@ -120,6 +124,7 @@ namespace Chess.Models
             x = new Queen(new Sprite2D(ContentService.Instance.Textures["BlackQueen"], new Rectangle(0, 0, pieceSize, pieceSize)), 0, 3, ChessColor.Black,this);
             x.Center(grid[0, 3].Bounds);
             board[0, 3] = x;
+*/
             x = new King(new Sprite2D(ContentService.Instance.Textures["BlackKing"], new Rectangle(0, 0, pieceSize, pieceSize)), 0, 4, ChessColor.Black,this);
             x.Center(grid[0, 4].Bounds);
             board[0, 4] = x;
@@ -185,8 +190,6 @@ namespace Chess.Models
             return board[r,c] == null;
         }
 
-        // Checks if a move is legal in the sense that the move does not threaten own king
-        // Does not check if the move itself follows the rules of chess
         public bool IsLegalMove(Piece p, int tR, int tC)
         {
             bool ret = false;
@@ -214,9 +217,6 @@ namespace Chess.Models
         }
 
 
-        /// Checks if a move is legal in the sense that the move does not threaten own king
-        /// Does not check if the move itself follows the rules of chess
-        /// This method starts by removing p2 from the board before the check
         public bool IsLegalMove(Piece p, int tR, int tC, Piece p2)
         {
             board[p2.Row, p2.Col] = null;

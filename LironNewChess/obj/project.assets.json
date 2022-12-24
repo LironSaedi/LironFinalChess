@@ -107,11 +107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\GMRDC1\\Folder Redirection\\Liron.Saedi\\Documents\\LironNewChess\\LironNewChess\\LironNewChess.csproj",
+      "projectUniqueName": "Z:\\LironNewChess\\LironNewChess\\LironNewChess.csproj",
       "projectName": "LironNewChess",
-      "projectPath": "\\\\GMRDC1\\Folder Redirection\\Liron.Saedi\\Documents\\LironNewChess\\LironNewChess\\LironNewChess.csproj",
+      "projectPath": "Z:\\LironNewChess\\LironNewChess\\LironNewChess.csproj",
       "packagesPath": "C:\\Users\\Liron.Saedi\\.nuget\\packages\\",
-      "outputPath": "\\\\GMRDC1\\Folder Redirection\\Liron.Saedi\\Documents\\LironNewChess\\LironNewChess\\obj\\",
+      "outputPath": "Z:\\LironNewChess\\LironNewChess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Liron.Saedi\\AppData\\Roaming\\NuGet\\NuGet.Config",

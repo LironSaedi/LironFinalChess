@@ -86,7 +86,7 @@ namespace Chess.Models.Pieces
                     }
                 }
             }
-            //En passant
+            //En passant move 
             if (Col != 0)
             {
                 if (Row == 3 && ChessColor == ChessColor.White && !board.IsEmpty(Row, Col - 1) && board.IsEmpty(Row - 1, Col - 1))
