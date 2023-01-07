@@ -6,9 +6,11 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Chess.Models
@@ -36,7 +38,7 @@ namespace Chess.Models
         public Piece LastPieceMoved;
 
         public Board()
-        {
+        {            
             Texture2D gridSquares = ContentService.Instance.Textures["Empty"];
             grid = new Sprite2D[8, 8];
             for (int i = 0; i < 8; i++)
@@ -61,7 +63,7 @@ namespace Chess.Models
             int pieceSize = Constants.PIESESIZE;
             int markSize = Constants.MARKED_PIESESIZE;
 
-            /*
+            
             for (int i = 0; i < 8; i++)
             {
                 Piece temp = new Pawn(new Sprite2D(ContentService.Instance.Textures["WhitePawn"], new Rectangle(0, 0, pieceSize, pieceSize)), 6, i, ChessColor.White,this);
@@ -90,13 +92,13 @@ namespace Chess.Models
             x = new Queen(new Sprite2D(ContentService.Instance.Textures["WhiteQueen"], new Rectangle(0, 0, pieceSize, pieceSize)), 7, 3, ChessColor.White,this);
             x.Center(grid[7, 3].Bounds);
             board[7, 3] = x;
-            */
-           Piece x = new King(new Sprite2D(ContentService.Instance.Textures["WhiteKing"], new Rectangle(0, 0, pieceSize, pieceSize)), 7, 4, ChessColor.White,this);
+            
+            x = new King(new Sprite2D(ContentService.Instance.Textures["WhiteKing"], new Rectangle(0, 0, pieceSize, pieceSize)), 7, 4, ChessColor.White,this);
             x.Center(grid[7, 4].Bounds);
             board[7, 4] = x;
 
 
-/*
+            /*
             for (int i = 0; i < 8; i++)
             {
                 Piece temp = new Pawn(new Sprite2D(ContentService.Instance.Textures["BlackPawn"], new Rectangle(0, 0, pieceSize, pieceSize)), 1, i, ChessColor.Black,this);
@@ -124,8 +126,8 @@ namespace Chess.Models
             x = new Queen(new Sprite2D(ContentService.Instance.Textures["BlackQueen"], new Rectangle(0, 0, pieceSize, pieceSize)), 0, 3, ChessColor.Black,this);
             x.Center(grid[0, 3].Bounds);
             board[0, 3] = x;
-*/
-            x = new King(new Sprite2D(ContentService.Instance.Textures["BlackKing"], new Rectangle(0, 0, pieceSize, pieceSize)), 0, 4, ChessColor.Black,this);
+            */
+             x = new King(new Sprite2D(ContentService.Instance.Textures["BlackKing"], new Rectangle(0, 0, pieceSize, pieceSize)), 0, 4, ChessColor.Black,this);
             x.Center(grid[0, 4].Bounds);
             board[0, 4] = x;
 

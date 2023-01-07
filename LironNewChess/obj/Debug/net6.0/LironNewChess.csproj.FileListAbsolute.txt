@@ -1,8 +1,8 @@
-\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.csproj.AssemblyReference.cache
-\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.GeneratedMSBuildEditorConfig.editorconfig
-\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.AssemblyInfoInputs.cache
-\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.AssemblyInfo.cs
-\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.csproj.CoreCompileInputs.cache
+Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.csproj.AssemblyReference.cache
+Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.GeneratedMSBuildEditorConfig.editorconfig
+Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.AssemblyInfoInputs.cache
+Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.AssemblyInfo.cs
+Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.csproj.CoreCompileInputs.cache
 Z:\LironNewChess\LironNewChess\bin\Debug\net6.0\Content\Sprites\ChessPieces.xnb
 Z:\LironNewChess\LironNewChess\bin\Debug\net6.0\Content\Sprites\Circle.xnb
 Z:\LironNewChess\LironNewChess\bin\Debug\net6.0\Content\Sprites\WhiteEmpty.xnb
@@ -20,11 +20,6 @@ Z:\LironNewChess\LironNewChess\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
 Z:\LironNewChess\LironNewChess\bin\Debug\net6.0\runtimes\win-x64\native\soft_oal.dll
 Z:\LironNewChess\LironNewChess\bin\Debug\net6.0\runtimes\win-x86\native\SDL2.dll
 Z:\LironNewChess\LironNewChess\bin\Debug\net6.0\runtimes\win-x86\native\soft_oal.dll
-Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.csproj.AssemblyReference.cache
-Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.GeneratedMSBuildEditorConfig.editorconfig
-Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.AssemblyInfoInputs.cache
-Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.AssemblyInfo.cs
-Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.csproj.CoreCompileInputs.cache
 Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.csproj.CopyComplete
 Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\LironNewChess.dll
 Z:\LironNewChess\LironNewChess\obj\Debug\net6.0\refint\LironNewChess.dll

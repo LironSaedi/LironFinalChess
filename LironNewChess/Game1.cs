@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.IO;
 
 namespace Chess
 {
@@ -45,6 +46,7 @@ namespace Chess
 
         protected override void LoadContent()
         {
+            File.WriteAllText("Scores.json", null);
             spriteBatch = new SpriteBatch(GraphicsDevice);
             ContentService.Instance.LoadContent(this.Content, GraphicsDevice, spriteBatch);
 

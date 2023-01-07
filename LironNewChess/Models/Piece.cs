@@ -87,6 +87,8 @@ namespace Chess.Models
         }
 
         public abstract void CalculateLegalMoves();
+        
+        
 
         public abstract bool SetsCheck();
 
