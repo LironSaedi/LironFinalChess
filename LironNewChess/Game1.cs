@@ -15,10 +15,10 @@ namespace Chess
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public static Random Random = new Random(); 
+        public static Random Random = new Random();
 
         ScreenManager screenManager;
-
+        Texture2D pixel;
         Input currentInput;
         Input previousInput;
 
@@ -27,7 +27,8 @@ namespace Chess
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            graphics.PreferredBackBufferWidth = Constants.TILESIZE * 8;
+
+            graphics.PreferredBackBufferWidth = Constants.TILESIZE * 8 /*+ 100*/;
             graphics.PreferredBackBufferHeight = Constants.TILESIZE * 8;
             graphics.ApplyChanges();
 
@@ -40,12 +41,16 @@ namespace Chess
             previousInput = new Input();
             currentInput = new Input();
 
-            
+
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
+            pixel = new Texture2D(GraphicsDevice, 1, 1);
+
+            pixel.SetData(new Color[] { Color.White });
+
             File.WriteAllText("Scores.json", null);
             spriteBatch = new SpriteBatch(GraphicsDevice);
             ContentService.Instance.LoadContent(this.Content, GraphicsDevice, spriteBatch);
@@ -75,10 +80,12 @@ namespace Chess
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
-            screenManager.Draw(gameTime,spriteBatch);
-
+            screenManager.Draw(gameTime, spriteBatch);
+            spriteBatch.Begin();
+            //     spriteBatch.Draw(pixel, new Rectangle(GraphicsDevice.Viewport.Width - 100, GraphicsDevice.Viewport.Height - 500, 100, 100), Color.DarkViolet);
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }
